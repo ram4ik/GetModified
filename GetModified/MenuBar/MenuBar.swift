@@ -35,15 +35,17 @@ struct MenuBar: View {
                     .foregroundColor(self.selected == 2 ? .black : .gray)
             }
             Spacer()
-            Button(action: {
-                self.selected = 0
-            }) {
-                VStack {
-                    Image(systemName: "arrow.right.arrow.left")
-                        .padding()
-                        .foregroundColor(.white)
-                        .background(Color("Green"))
-                        .cornerRadius(40)
+            VStack {
+                Button(action: {
+                    self.selected = 0
+                }) {
+                    VStack {
+                        Image(systemName: "arrow.right.arrow.left")
+                            .padding(15)
+                            .foregroundColor(.white)
+                            .background(Color("Green"))
+                            .cornerRadius(30)
+                    }
                 }
             }
             
